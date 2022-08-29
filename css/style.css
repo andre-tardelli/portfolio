@@ -401,3 +401,77 @@ header.sticky{
         transition: .2s;
     }
 }
+
+@media (max-width: 990px){
+    .home{
+        height: 85vh;
+    }
+
+    #menu-icon{
+        display: initial;
+    }
+
+    .navbar{
+        position: absolute;
+        top: -700px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .30s;
+    }
+
+    .navbar a{
+        display: block;
+        padding: 1.1rem;
+        margin: 1.3rem;
+        border-Left: 2px solid var(--text-color);
+    }
+
+    .navbar a:hover{
+        background: var(--main-color);
+    }
+    
+    .navbar a::after{
+        display: none;
+    }
+
+    .navbar.active{
+        top: 100%
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .about-img{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-img img{
+        max-width: 100%;
+        width: 700px;
+        height: auto;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-img{
+        text-align: center;
+        margin-bottom: 25px;
+    } 
+
+    .contact-form{
+        order: 2;
+    }
+
+    .box img{
+        max-width: 100%;
+        width: 760px;
+        height: auto;
+    }
+}
