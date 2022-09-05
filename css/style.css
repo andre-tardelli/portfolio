@@ -438,7 +438,7 @@ header.sticky{
     }
 
     .navbar.active{
-        top: 100%
+        top: 100%;
     }
 
     .about{
